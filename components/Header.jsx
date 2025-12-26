@@ -1,6 +1,5 @@
 import { NavLink } from "react-router";
 
-
 const Title = () => (
   <a href="#">
     <img
@@ -15,7 +14,7 @@ const Title = () => (
 const Header = () => {
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"> 
-      <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img
           src="..\QUANTISBULL.jpg"
           className="h-16" 
@@ -62,19 +61,19 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <NavLink to='/crypto'
-              href="#"
-              className="block py-3 px-5 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-            >
-              Crypto
-            </NavLink>
-          </li>
-          <li>
             <NavLink to='/stock'
               href="#"
               className="block py-3 px-5 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
             >
               Stocks
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/crypto'
+              href="#"
+              className="block py-3 px-5 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+            >
+              Crypto
             </NavLink>
           </li>
           <li>
