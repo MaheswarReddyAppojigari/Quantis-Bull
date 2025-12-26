@@ -171,10 +171,7 @@ function Forex() {
           </div>
         </div>
 
-        {/* Footer Info */}
-        <div className="text-center text-gray-600 mt-6 text-sm">
-          Data provided by Frankfurter API • Rates updated daily
-        </div>
+        
       </div>
     </div>
   );
