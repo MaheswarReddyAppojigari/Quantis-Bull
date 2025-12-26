@@ -33,7 +33,7 @@ function App() {
           </div>
           <div className="image-container">
             <img
-              src="/public/landing.svg"
+              src="/landing.svg"
               alt="Financial Markets"
               className="landing-image"
             />
