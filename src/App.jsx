@@ -60,6 +60,7 @@
 // }
 
 // export default App;
+import {NavLink} from "react-router"
 import React from "react";
 import {
   TrendingUp,
@@ -104,20 +105,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-      {/* Header */}
-      {/* <header className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-16 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <BarChart3 className="w-12 h-12 text-blue-400" />
-            <h1 className="text-5xl font-bold">Quantis Bull</h1>
-          </div>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Your one-stop destination for live market data and real-time financial insights
-          </p>
-        </div>
-      </header> */}
-
-      {/* Main Content */}
+     
       <main className="max-w-7xl mx-auto px-6 py-16">
         {/* Hero Section */}
         <section className="grid md:grid-cols-2 gap-12 items-center mb-20">
@@ -168,9 +156,9 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {markets.map((market, index) => (
-              <a
+              <NavLink
                 key={index}
-                href={market.path}
+                to={market.path}
                 className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
               >
                 <div
@@ -209,7 +197,7 @@ function App() {
                     </svg>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             ))}
           </div>
         </section>
