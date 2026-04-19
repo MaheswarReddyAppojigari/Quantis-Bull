@@ -275,7 +275,7 @@ function GroqChatbot() {
       const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": "Bearer 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",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
